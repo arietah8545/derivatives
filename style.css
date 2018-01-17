@@ -1,13 +1,83 @@
-div {
-    height: 200px;
-    /*width: 200px;*/
+#background {
+    max-height: 200px;
     background: lightblue;
-    background: linear-gradient(lightblue,white);
-    
+    /*in case gradients are not supported*/
+    background: linear-gradient(lightblue, white);
+    /*The gradient will fade top-to-bottom going from lightblue to white*/
+    padding-top: 80px;
 }
 
 h1 {
     text-align: center;
     margin: auto;
+    font-size: 80px;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+h3 {
     font-size: 50px;
+}
+
+#rules {
+    font-family: 'Slabo 27px', serif;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/*Each rule has the repeated code so that they will each have the transition and have the same formatting*/
+
+#rule1 {
+    display: inline-block;
+    /*allows the divs to be placed next to each other, while still allowing to take up an indicated amount of space*/
+    margin-right: 30px;
+    color: gray;
+    transition: color 1s, box-shadow 1s;
+    /*will change the font color and create a box-shadow, each for 1 second*/
+}
+
+#rule1:hover {
+    /*when the cursor hovers over the div, the following will happen*/
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    /*sets the dimensions, color, and opacity of the box shadow*/
+    background-color: lightblue;
+    color: black;
+}
+
+#rule2 {
+    display: inline-block;
+    margin-right: 30px;
+    color: gray;
+    transition: background-color 1s, color 1s, box-shadow 1s;
+}
+
+#rule2:hover {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    background-color: lightblue;
+    color: black;
+}
+
+#rule3 {
+    display: inline-block;
+    margin-right: 30px;
+    color: gray;
+    transition: background-color 1s, color 1s, box-shadow 1s;
+}
+
+#rule3:hover {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    background-color: lightblue;
+    color: black;
+}
+
+#rule4 {
+    display: inline-block;
+    color: gray;
+    transition: background-color 1s, color 1s, box-shadow 1s;
+}
+
+#rule4:hover {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    background-color: lightblue;
+    color: black;
 }
