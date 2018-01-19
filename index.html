@@ -15,32 +15,21 @@
 <body>
     <div id="background">
         <h1>Derivatives</h1>
+        <p id="instruction">Hover over the rules to view an example!</p>
+        
         <div id="rules">
             <div id="rule1">
                 <h3>Power Rule</h3>
                 <p>y = x<sup>n</sup> --> y<sup>'</sup> = nx<sup>x-1</sup></p>
+            </div>
+            <div id="power">
+                <p>y = 3x<sup>5</sup><br>y<sup>'</sup> = 15x<sup>4</sup></p>
             </div>
 
             <div id="rule2">
                 <h3>Product Rule</h3>
                 <p>y<sup>'</sup> = f <sup>'</sup>*g + f *g<sup>'</sup></p>
             </div>
-
-            <div id="rule3">
-                <h3>Quotient Rule</h3>
-                <p>y<sup>'</sup> = <sup class="frac">(f <sup>'</sup>*g - f *g<sup>' </sup>) </sup>&frasl;<span class="frac"> g<sup>2</sup></span></p>
-            </div>
-
-            <div id="rule4">
-                <h3>Chain Rule</h3>
-                <p>y<sup>'</sup> = f <sup>'</sup>(g(x)) * g<sup>'</sup></p>
-            </div>
-        </div>
-        <div id="examples">
-            <div id="power">
-                <p>y = 3x<sup>5</sup><br>y<sup>'</sup> = 15x<sup>4</sup></p>
-            </div>
-
             <div id="product">
                 <p>
                     y = 4x<sup>2</sup> * 5x<sup>3</sup><br> y
@@ -50,10 +39,28 @@
                 </p>
             </div>
 
+            <div id="rule3">
+                <h3>Quotient Rule</h3>
+                <p>y<sup>'</sup> = <sup class="frac">(f <sup>'</sup>*g - f *g<sup>' </sup>) </sup>&frasl;<span class="frac"> g<sup>2</sup></span></p>
+            </div>
             <div id="quotient">
                 <p>
                     y = <sup class="frac">(x + 4) </sup>&frasl;<span class="frac"> (2x-5)</span><br>
-                    y<sup>'</sup> = <sup class="frac">(2x-5)(1+0) - (x+4)(2-0) </sup>&frasl;<span class="frac"> (2x-5)<sup>2</sup></span>
+                    y<sup>'</sup> = <sup class="frac">(2x-5)(1+0) - (x+4)(2-0) </sup>&frasl;<span class="frac"> (2x-5)<sup>2</sup></span><br>
+                    y<sup>'</sup> = <sup class="frac">2x-5 - (2x+8) </sup>&frasl;<span class="frac"> (2x-5)<sup>2</sup></span><br>
+                    y<sup>'</sup> = <sup class="frac">-13 </sup>&frasl;<span class="frac"> (2x-5)<sup>2</sup></span>
+                </p>
+            </div>
+
+            <div id="rule4">
+                <h3>Chain Rule</h3>
+                <p>y<sup>'</sup> = f <sup>'</sup>(g(x)) * g<sup>'</sup></p>
+            </div>
+            <div id="chain">
+                <p>
+                    y = sin(5x)<br>
+                    y<sup>'</sup> = cos(5x) * 5<br>
+                    y<sup>'</sup> = 5cos(5x)
                 </p>
             </div>
         </div>
