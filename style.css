@@ -20,7 +20,7 @@ h3 {
 
 #rules {
     font-family: 'Slabo 27px', serif;
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
     margin-top: 40px;
 }
@@ -30,7 +30,7 @@ h3 {
 #rule1 {
     display: inline-block;
     /*allows the divs to be placed next to each other, while still allowing to take up an indicated amount of space*/
-    margin-right: 30px;
+    margin-right: 40px;
     color: gray;
     transition: color 1s, box-shadow 1s;
     /*will change the font color and create a box-shadow, each for 1 second*/
@@ -46,7 +46,7 @@ h3 {
 
 #rule2 {
     display: inline-block;
-    margin-right: 30px;
+    margin-right: 40px;
     color: gray;
     transition: background-color 1s, color 1s, box-shadow 1s;
 }
@@ -59,7 +59,7 @@ h3 {
 
 #rule3 {
     display: inline-block;
-    margin-right: 30px;
+    margin-right: 40px;
     color: gray;
     transition: background-color 1s, color 1s, box-shadow 1s;
 }
@@ -80,4 +80,10 @@ h3 {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     background-color: lightblue;
     color: black;
+}
+
+#examples {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 40px;
 }
